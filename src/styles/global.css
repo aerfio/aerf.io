@@ -7,10 +7,10 @@
   }
 }
 @layer base {
-  body.dark {
+  body {
     @apply bg-secondarydark;
   }
-  body.light {
+  body:not(.dark) {
     @apply bg-secondarylight;
   }
 }

@@ -33,7 +33,9 @@ const TEXT_ID = "nickname-text";
 const RawText: React.FunctionComponent = () => (
   <p
     id={TEXT_ID}
-    className={`-z-1 after:clip-path-aerfio fixed m-0 h-5 w-[700px] font-sans text-8xl before:absolute before:w-full before:pb-5 before:pl-7 before:pr-0 before:pt-4 before:font-sans before:text-primarylight before:transition before:duration-150 before:content-['aerfio'] after:absolute after:w-full after:bg-primarylight after:pb-5 after:pl-7 after:pr-0 after:pt-4 after:font-sans after:text-secondarylight after:content-['aerfio'] dark:before:text-primarydark dark:after:bg-primarydark dark:after:text-secondarydark`}
+    className={
+      "-z-1 after:clip-path-aerfio relative m-0 h-5 w-[700px] font-sans text-8xl before:absolute before:w-full before:pb-5 before:pl-7 before:pr-0 before:pt-4 before:font-sans before:text-primarylight before:transition before:duration-150 before:content-['aerfio'] after:absolute after:w-full after:bg-primarylight after:pb-5 after:pl-7 after:pr-0 after:pt-4 after:font-sans after:text-secondarylight after:content-['aerfio'] dark:before:text-primarydark dark:after:bg-primarydark dark:after:text-secondarydark"
+    }
   />
 );
 
