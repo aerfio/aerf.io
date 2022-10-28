@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
+  darkMode: "class",
   content: ["./src/pages/**/*.{ts,tsx}", "./src/components/**/*.{ts,tsx}"],
   theme: {
     extend: {
@@ -14,7 +15,7 @@ module.exports = {
           "intro     intro   intro",
           "about about about",
         ],
-        phone: ["nickname nickname", "intro  intro", "about  about"],
+        phone: ["nickname", "intro", "about"],
       },
       gridTemplateColumns: {
         desktop: "1fr 1fr 1fr",
@@ -26,8 +27,10 @@ module.exports = {
                  `,
       },
       colors: {
-        aerfiopink: "#e37fad",
-        aerfiogrey: "#282c35",
+        primarydark: "#e37fad",
+        secondarydark: "#282c35",
+        primarylight: "#282c35",
+        secondarylight: "#ebdbb2",
       },
     },
   },
