@@ -1,17 +1,28 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
 import { Nickname } from "../components/Nickname";
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
   return (
     <>
-      <main className="grid-columns-layout grid h-screen w-screen grid-rows-layout bg-aerfiogrey grid-areas-layout">
+      <main className="grid h-screen w-screen grid-cols-phone grid-rows-layout bg-aerfiogrey grid-areas-desktop sm:grid-cols-desktop">
         <Nickname />
-        <h1 className="text-lg text-white grid-in-date">
-          Congratulations
-          <br />
-          <span>— you just made a Gatsby site! 🎉🎉🎉</span>
-        </h1>
+        <section className="p-10 grid-in-intro">
+          <h1 className="text-2xl text-white">
+            Congratulations
+            <br />
+            <span>— WIP! 🎉🎉🎉</span>
+          </h1>
+          <StaticImage
+            src="../images/profile.jpeg"
+            alt="profile photo"
+            placeholder="blurred"
+            formats={["webp", "avif", "auto"]}
+            imgClassName="rounded-full p-15"
+            className="m-3"
+          ></StaticImage>
+        </section>
       </main>
     </>
   );

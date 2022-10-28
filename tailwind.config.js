@@ -1,21 +1,24 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/pages/**/*.{ts,tsx}", "./src/components/**/*.{ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        sans: "'IBM Plex Serif'",
+        sans: ["'IBM Plex Serif'", ...defaultTheme.fontFamily.sans],
       },
+      // https://savvywombat.com.au/tailwind-css/grid-areas/
       gridTemplateAreas: {
-        layout: [
-          "nickname date time",
-          "trade     .   parity",
-          "search search search",
-          "links links links",
+        desktop: [
+          "nickname . .",
+          "intro     intro   intro",
+          "about about about",
         ],
+        phone: ["nickname nickname", "intro  intro", "about  about"],
       },
       gridTemplateColumns: {
-        layout: "1fr 1fr 1fr",
+        desktop: "1fr 1fr 1fr",
+        phone: "3fr 2fr",
       },
       gridTemplateRows: {
         layout: `150px
@@ -29,4 +32,9 @@ module.exports = {
     },
   },
   plugins: [require("@savvywombat/tailwindcss-grid-areas")],
+  variants: {
+    gridTemplateAreas: ["responsive"],
+    gridTemplateColumns: ["responsive"],
+    gridTemplateRows: ["responsive"],
+  },
 };
