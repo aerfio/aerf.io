@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .clip-path-aerfio {
+    clip-path: polygon(0 0, 0 80%, 50% 0px);
+  }
+}
+@layer base {
+  body,
+  html {
+    @apply bg-aerfiogrey;
+  }
+}
