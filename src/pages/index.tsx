@@ -18,8 +18,10 @@ const IndexPage = () => {
             src="../images/profile.jpeg"
             alt="profile photo"
             placeholder="blurred"
-            formats={["webp", "avif", "auto"]}
+            layout="constrained"
+            formats={["webp", "auto", "avif"]}
             imgClassName="rounded-full p-15"
+            quality={100}
             className="m-3"
           ></StaticImage>
         </section>
