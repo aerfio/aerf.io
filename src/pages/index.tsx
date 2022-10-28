@@ -1,6 +1,6 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
-import { Nickname, DarkModeToggle } from "../components";
+import { Nickname, DarkModeToggle, SEO } from "../components";
 import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
@@ -50,4 +50,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => <SEO />;
