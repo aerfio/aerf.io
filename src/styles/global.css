@@ -7,8 +7,10 @@
   }
 }
 @layer base {
-  body,
-  html {
-    @apply bg-aerfiogrey;
+  body.dark {
+    @apply bg-secondarydark;
+  }
+  body.light {
+    @apply bg-secondarylight;
   }
 }
