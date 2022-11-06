@@ -3,7 +3,7 @@ import { useTheme } from "../utils/utils";
 import { Helmet } from "react-helmet";
 
 const InputID = "theme-switch";
-export const DarkModeToggle = () => {
+export const ThemeSwitch = () => {
   if (typeof window === "undefined") {
     return null;
   }
@@ -12,30 +12,20 @@ export const DarkModeToggle = () => {
 
   return (
     <>
-      <section className="mr-5 self-end">
-        <span>☀️</span>
+      <section className="grid self-end p-4 grid-in-nickname">
+        <input
+          type="checkbox"
+          id={InputID}
+          defaultChecked={true}
+          className="invisible h-0 w-0"
+        />
         <label
+          onClick={useThemeToggle}
           htmlFor={InputID}
-          className="align-center relative flex h-7 w-12 cursor-pointer justify-between rounded-[100px] bg-primarylight shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] outline-none transition duration-200 dark:bg-primarydark"
+          className="align-center pointer relative left-[2px] flex h-7 w-12 cursor-pointer justify-between rounded-[100px] bg-primarylight shadow-[0_1px_2px_0px_rgba(0,0,0,0.44)] outline-none transition duration-200 dark:bg-primarydark"
         >
-          <input
-            type="checkbox"
-            id={InputID}
-            defaultChecked={true}
-            onClick={useThemeToggle}
-            // className="invisible h-0 w-0"
-            // readOnly
-          />
-          {/* <button className="round-full absolute top-[2px] left-[2px] h-6 w-6 border-0 border-solid border-primarylight transition duration-300 content-[''] dark:left-[calc(100%-2px)] dark:border-primarydark	" /> */}
+          <span className="translate-none absolute top-[2px] left-[2px] h-6 w-6 rounded-full border-0 border-solid border-primarylight bg-white transition duration-300 ease-in content-[''] dark:left-[calc(100%-2px)] dark:translate-x-[-100%] dark:border-primarydark" />
         </label>
-        <span>🌒</span>
-        {/* <button type="button" onClick={darkMode.disable}>
-          ☀
-        </button>
-
-        <button type="button" onClick={darkMode.enable}>
-          ☾
-        </button> */}
       </section>
       <Helmet
         meta={[
