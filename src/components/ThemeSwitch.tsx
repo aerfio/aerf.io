@@ -37,7 +37,6 @@ export const DarkModeToggle = () => {
           ☾
         </button> */}
       </section>
-
       <Helmet
         meta={[
           {
