@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
   return (
-    <Layout className="w-screen">
+    <Layout>
       <h1 className="pb-5 text-6xl text-primarylight dark:text-primarydark">
         Hello!
         <br />

@@ -4,7 +4,7 @@ import { Nickname, DarkModeToggle, SEO, Layout } from "../components";
 
 const NotFoundPage = () => {
   return (
-    <Layout className={"w-screen"}>
+    <Layout>
       <p className="whitespace-normal text-3xl text-primarylight dark:text-primarydark">
         Sorry 😔, we couldn't find what you were looking for.
       </p>
