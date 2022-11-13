@@ -1,14 +1,16 @@
-import React, { PropsWithChildren, FunctionComponent } from "react";
+import React, { PropsWithChildren, FunctionComponent, ReactNode } from "react";
 import { Nickname } from "./Nickname";
 import { ThemeSwitch } from "./ThemeSwitch";
 
 interface Props {
-  className?: string;
+  introSectionClassName?: string;
+  aboutChildren?: ReactNode;
 }
 
 export const Layout: FunctionComponent<PropsWithChildren<Props>> = ({
   children,
-  className = "",
+  introSectionClassName = "",
+  aboutChildren,
 }) => (
   <main
     className={`grid h-screen w-screen grid-cols-phone grid-rows-layout grid-areas-desktop sm:grid-cols-desktop`}
@@ -18,9 +20,10 @@ export const Layout: FunctionComponent<PropsWithChildren<Props>> = ({
       <ThemeSwitch />
     </div>
     <section
-      className={`mx-0 flex flex-wrap content-center justify-evenly px-10 grid-in-intro md:mx-96 ${className}`}
+      className={`mx-0 flex flex-wrap content-center justify-evenly grid-in-intro ${introSectionClassName}`}
     >
       {children}
     </section>
+    {aboutChildren || null}
   </main>
 );
