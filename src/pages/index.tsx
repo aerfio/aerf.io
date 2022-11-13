@@ -17,10 +17,12 @@ const IndexPage = () => {
               Certified Kubernetes Application Developer
             </Link>{" "}
             and{" "}
-            <Link href="https://www.credly.com/badges/2953ddbe-07ed-4828-8e74-8508185d0df2">
-              Certified Kubernetes Administrator
-            </Link>
-            {"."}
+            <span className="whitespace-nowrap">
+              <Link href="https://www.credly.com/badges/2953ddbe-07ed-4828-8e74-8508185d0df2">
+                Certified Kubernetes Administrator
+              </Link>
+              {"."}
+            </span>
           </p>
         </section>
       }

@@ -1,6 +1,9 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  flags: {
+    DEV_SSR: true,
+  },
   siteMetadata: {
     title: `aerf.io`,
     siteUrl: `https://aerf.io`,
@@ -11,6 +14,7 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: false,
   plugins: [
+    `gatsby-plugin-pnpm`,
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",

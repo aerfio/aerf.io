@@ -17,7 +17,7 @@ export const Layout: FunctionComponent<PropsWithChildren<Props>> = ({
   >
     <div className="flex w-screen flex-col">
       <Nickname />
-      <ThemeSwitch />
+      {typeof window !== "undefined" && <ThemeSwitch />}
     </div>
     <section
       className={`mx-0 flex flex-wrap content-center justify-evenly grid-in-intro ${introSectionClassName}`}

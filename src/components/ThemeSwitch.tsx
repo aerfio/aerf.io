@@ -5,10 +5,6 @@ import { FiSun, FiMoon } from "react-icons/fi";
 import { IconBaseProps } from "react-icons/lib";
 const InputID = "theme-switch";
 export const ThemeSwitch = () => {
-  if (typeof window === "undefined") {
-    return null;
-  }
-
   const { isDarkThemeEnabled, useThemeToggle } = useTheme();
   const iconProps: IconBaseProps = {
     style: {
