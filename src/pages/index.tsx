@@ -38,12 +38,12 @@ const IndexPage = () => {
       <StaticImage
         src="../images/profile.jpeg"
         alt="profile photo"
-        placeholder="blurred"
+        placeholder="none"
         layout="constrained"
         objectFit="contain"
         formats={["avif", "webp", "auto"]}
         imgClassName="rounded-full p-0 border-solid border-black border-2"
-        quality={100}
+        quality={95}
         className="mx-16 h-auto max-w-md md:mx-5"
         loading="eager"
       />
