@@ -16,6 +16,7 @@ const config: GatsbyConfig = {
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
+    "gatsby-plugin-netlify",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-use-dark-mode",
