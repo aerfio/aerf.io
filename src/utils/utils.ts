@@ -45,30 +45,30 @@ const THEME_CONSTANTS = {
 };
 
 export const useTheme = () => {
-  const isDarkTheme = () =>
+  const [isDarkTheme, setDarkTheme] = useState(true);
+  const isDarkThemeFn = () =>
     typeof window !== "undefined" &&
     localStorage.getItem(THEME_CONSTANTS.storageKey) === String(true);
 
-  const [isDarkThemeState, setDarkTheme] = useState<boolean>(isDarkTheme());
-
   const useThemeToggle = useCallback(() => {
-    if (isDarkTheme()) {
+    if (isDarkThemeFn()) {
       document.body.classList.remove(THEME_CONSTANTS.classNameDark);
     } else {
       document.body.classList.add(THEME_CONSTANTS.classNameDark);
     }
     if (typeof window !== "undefined") {
-      localStorage.setItem(
-        THEME_CONSTANTS.storageKey,
-        String(!isDarkThemeState)
-      );
+      localStorage.setItem(THEME_CONSTANTS.storageKey, String(!isDarkTheme));
     }
 
     setDarkTheme((arg) => !arg);
-  }, [isDarkThemeState]);
+  }, [isDarkTheme]);
+
+  useEffect(() => {
+    setDarkTheme(() => isDarkThemeFn());
+  }, []);
 
   return {
-    isDarkThemeEnabled: isDarkThemeState,
+    isDarkThemeEnabled: isDarkTheme,
     useThemeToggle,
   };
 };
