@@ -4,8 +4,8 @@ const handler: Handler = async (
   event: HandlerEvent,
   context: HandlerContext
 ) => {
-  console.log(`event body: ${event.body}`);
-  console.log(`context: ${context}`);
+console.log(`event body: ${JSON.stringify(event.body)}`);
+  console.log(`context: ${JSON.stringify(context)}`);
 
   return {
     statusCode: 200,
