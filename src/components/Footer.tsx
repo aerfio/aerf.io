@@ -4,8 +4,8 @@ import { Link } from "./Link";
 
 export const Footer = () => {
   return (
-    <section className="py-10 text-primarylight  grid-in-footer dark:text-primarydark">
-      <div className="flex content-center justify-evenly pb-14 text-5xl">
+    <section className="py-6 text-primarylight  grid-in-footer dark:text-primarydark">
+      <div className="flex content-center justify-evenly pb-8 text-5xl">
         <Link href="https://github.com/aerfio" underline={false}>
           <FiGithub />
         </Link>

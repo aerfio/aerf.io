@@ -9,8 +9,8 @@ const IndexPage = () => {
       aboutChildren={
         <>
           <section className="flex flex-wrap content-center justify-evenly pt-10 pb-10 grid-in-about">
-            <section className="px-5 md:px-20">
-              <p className="px-8 text-2xl text-primarylight dark:text-primarydark md:text-4xl">
+            <section className="md:px-20">
+              <p className="px-8 text-xl text-primarylight dark:text-primarydark md:text-4xl">
                 <span className="mb-8 block">
                   I'm currently working in{" "}
                   <Link href="https://www.travelping.com/">Travelping</Link>,
