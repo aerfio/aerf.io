@@ -7,22 +7,22 @@ const IndexPage = () => {
   return (
     <Layout
       aboutChildren={
-        <section className="mx-0 flex flex-wrap content-center justify-evenly grid-in-about">
-          <p className="mx text-4xl text-primarylight dark:text-primarydark">
+        <section className="pt-10 flex pb-10 flex-wrap content-center justify-evenly grid-in-about">
+          <p className="px-8 text-2xl md:text-4xl text-primarylight dark:text-primarydark">
             <span>I'm</span>{" "}
             <Link
               href="https://www.credly.com/badges/1194769f-143d-404a-8d46-67c30769d33b"
-              className=""
+              externalIcon
             >
               Certified Kubernetes Application Developer
             </Link>{" "}
             and{" "}
-            <span className="whitespace-nowrap">
-              <Link href="https://www.credly.com/badges/2953ddbe-07ed-4828-8e74-8508185d0df2">
-                Certified Kubernetes Administrator
-              </Link>
-              {"."}
-            </span>
+
+            <Link href="https://www.credly.com/badges/2953ddbe-07ed-4828-8e74-8508185d0df2" externalIcon>
+              Certified Kubernetes Administrator
+            </Link>
+            {"."}
+
           </p>
         </section>
       }
@@ -38,7 +38,7 @@ const IndexPage = () => {
       <StaticImage
         src="../images/profile.jpeg"
         alt="profile photo"
-        placeholder="none"
+        placeholder="dominantColor"
         layout="constrained"
         objectFit="contain"
         formats={["avif", "webp", "auto"]}

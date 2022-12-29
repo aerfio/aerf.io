@@ -15,13 +15,13 @@ export const Link: FunctionComponent<PropsWithChildren<LinkProps>> = ({
 }) => {
   return (
     <a
-      className={`decoration:primarylight border-b-1 boder-secondarylight border-solid underline dark:decoration-primarydark ${className}`}
+      className={`border-b-[3px] border-current border-solid leading-relaxed ${className}`}
       href={href}
       rel="noopener noreferrer"
     >
       {children}
       {externalIcon && (
-        <RiExternalLinkLine className="decoration:primarylight relative bottom-1 inline-block underline dark:decoration-primarydark" />
+        <RiExternalLinkLine className="relative bottom-1 inline-block underline" />
       )}
     </a>
   );
