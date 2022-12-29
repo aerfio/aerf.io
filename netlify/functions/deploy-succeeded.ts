@@ -12,8 +12,9 @@ const handler: Handler = async (
         body: JSON.stringify({
             "topic": process.env.TOPIC_NAME,
             "title": "Deploy to netlify succeeded",
+            "message": "Newest build suceeded",
             "tags": ["partying_face"],
-            "priority": 2,
+            "priority": 1,
             "click": "https://aerf.io",
         })
     })
