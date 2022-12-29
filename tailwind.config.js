@@ -14,8 +14,9 @@ module.exports = {
           "nickname . .",
           "intro     intro   intro",
           "about about about",
+          "footer footer footer",
         ],
-        phone: ["nickname", "intro", "about"],
+        phone: ["nickname", "intro", "about", "footer"],
       },
       gridTemplateColumns: {
         desktop: "1fr 1fr 1fr",

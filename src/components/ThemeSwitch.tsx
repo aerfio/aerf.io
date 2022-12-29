@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useTheme } from "../utils/utils";
 import { Helmet } from "react-helmet";
 import { FiSun, FiMoon } from "react-icons/fi";

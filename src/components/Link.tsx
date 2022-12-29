@@ -5,17 +5,19 @@ interface LinkProps {
   href: string;
   className?: string;
   externalIcon?: boolean;
+  underline?: boolean;
 }
 
 export const Link: FunctionComponent<PropsWithChildren<LinkProps>> = ({
   href,
   children,
   className,
-  externalIcon = true,
+  externalIcon = false,
+  underline = true,
 }) => {
   return (
     <a
-      className={`border-b-[3px] border-current border-solid leading-relaxed ${className}`}
+      className={`${underline && "border-b-[3px] border-current border-solid"}  leading-relaxed ${className}`}
       href={href}
       rel="noopener noreferrer"
     >

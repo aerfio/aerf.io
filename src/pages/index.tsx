@@ -1,30 +1,39 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
-import { SEO, Layout, Link } from "../components";
+import { SEO, Layout, Link, Footer } from "../components";
 import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
   return (
     <Layout
       aboutChildren={
-        <section className="pt-10 flex pb-10 flex-wrap content-center justify-evenly grid-in-about">
-          <p className="px-8 text-2xl md:text-4xl text-primarylight dark:text-primarydark">
-            <span>I'm</span>{" "}
-            <Link
-              href="https://www.credly.com/badges/1194769f-143d-404a-8d46-67c30769d33b"
-              externalIcon
-            >
-              Certified Kubernetes Application Developer
-            </Link>{" "}
-            and{" "}
+        <>
+          <section className="pt-10 flex pb-10 flex-wrap content-center justify-evenly grid-in-about">
+            <section className="px-5 md:px-20">
+              <p className="px-8 text-2xl md:text-4xl text-primarylight dark:text-primarydark">
+                <span className="mb-8 block">
+                  I'm currently working in <Link href="https://www.travelping.com/">Travelping</Link>, using <Link href="https://go.dev">Go</Link> programming language to create Kubernetes Operators.
+                  Apart from that my area of expertise is designing and creating REST and GraphQL APIs, fun stuff 🤩
+                </span>
+                <span className="mb-8 block">I used to be Frontend Developer, having joy in using Typescript and React.js together! </span>
+                <span>I'm also</span>{" "}
+                <Link
+                  href="https://www.credly.com/badges/1194769f-143d-404a-8d46-67c30769d33b"
+                  externalIcon
+                >
+                  Certified Kubernetes Application Developer
+                </Link>{" "}
+                and{" "}
+                <Link href="https://www.credly.com/badges/2953ddbe-07ed-4828-8e74-8508185d0df2" externalIcon>
+                  Certified Kubernetes Administrator
+                </Link>
+                {"."}
+              </p>
+            </section>
+          </section >
+          <Footer />
+        </>
 
-            <Link href="https://www.credly.com/badges/2953ddbe-07ed-4828-8e74-8508185d0df2" externalIcon>
-              Certified Kubernetes Administrator
-            </Link>
-            {"."}
-
-          </p>
-        </section>
       }
     >
       <article className="flex items-center">
@@ -47,7 +56,7 @@ const IndexPage = () => {
         className="mx-16 h-auto max-w-md md:mx-5"
         loading="eager"
       />
-    </Layout>
+    </Layout >
   );
 };
 
