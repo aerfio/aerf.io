@@ -12,19 +12,18 @@ const IndexPage = () => {
             <section className="px-5 md:px-20">
               <p className="px-8 text-2xl md:text-4xl text-primarylight dark:text-primarydark">
                 <span className="mb-8 block">
-                  I'm currently working in <Link href="https://www.travelping.com/">Travelping</Link>, using <Link href="https://go.dev">Go</Link> programming language to create <Link href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes Operators</Link>.
-                  Apart from that my area of expertise is designing and creating REST and GraphQL APIs.
+                  I'm currently working in <Link href="https://www.travelping.com/">Travelping</Link>, using <Link href="https://go.dev">Go</Link> programming language to create <Link href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Kubernetes Operators</Link>.{" "}
+                  <span>
+                    Apart from that my area of expertise is designing and creating REST and GraphQL APIs.
+                  </span>
                 </span>
                 <span className="mb-8 block">I used to be Frontend Developer, having joy in using <Link href="https://www.typescriptlang.org/">Typescript</Link> and <Link href="https://reactjs.org/">React.js</Link> together!</span>
                 <span>I'm also</span>{" "}
-                <Link
-                  href="https://www.credly.com/badges/1194769f-143d-404a-8d46-67c30769d33b"
-                  externalIcon
-                >
+                <Link href="https://www.credly.com/badges/1194769f-143d-404a-8d46-67c30769d33b">
                   Certified Kubernetes Application Developer
                 </Link>{" "}
                 and{" "}
-                <Link href="https://www.credly.com/badges/2953ddbe-07ed-4828-8e74-8508185d0df2" externalIcon>
+                <Link href="https://www.credly.com/badges/2953ddbe-07ed-4828-8e74-8508185d0df2">
                   Certified Kubernetes Administrator
                 </Link>
                 {"."}
