@@ -15,9 +15,10 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "prettier-format": "prettier 'src/**/*.ts{,x}' --write"
+    "prettier-format": "prettier 'src/**/*.ts{,x}' --write && prettier 'netlify/**/*.ts{,x}' --write"
   },
   "dependencies": {
+    "@netlify/functions": "^1.3.0",
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.13",
     "gatsby": "^5.3.3",
