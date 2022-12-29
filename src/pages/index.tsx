@@ -38,7 +38,7 @@ const IndexPage = () => {
       <StaticImage
         src="../images/profile.jpeg"
         alt="profile photo"
-        placeholder="dominantColor"
+        placeholder="none"
         layout="constrained"
         objectFit="contain"
         formats={["avif", "webp", "auto"]}
