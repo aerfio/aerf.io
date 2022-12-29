@@ -19,8 +19,8 @@ const AnimatedText: FC = () => {
 
   const { x, y } = useMousePosition();
 
-  const xPos = y ? 45 + (y / 1000) * 30 : 300;
-  const yPos = x ? 45 + (x / 1600) * 30 : 500;
+  const xPos = y !== null ? 45 + (y / 1000) * 30 : 300;
+  const yPos = x !== null ? 45 + (x / 1600) * 30 : 500;
 
   if (style.current) {
     const polygon = `polygon(0 0, 0 ${xPos}%, ${yPos}% 0px)`;
