@@ -17,8 +17,9 @@ export const Link: FunctionComponent<PropsWithChildren<LinkProps>> = ({
 }) => {
   return (
     <a
-      className={`${underline ? "border-b-[3px] border-solid border-current" : ""
-        } leading-relaxed ${className}`}
+      className={`${
+        underline ? "border-b-[3px] border-solid border-current" : ""
+      } leading-relaxed ${className}`}
       href={href}
       rel="noopener noreferrer"
     >
