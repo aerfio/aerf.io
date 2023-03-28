@@ -1,0 +1,9 @@
+{
+    "domain": "aerf.io",
+    "repositories": [
+        {
+            "prefix": "podenvs",
+            "url": "https://github.com/aerfio/pod-envs"
+        }
+    ]
+}

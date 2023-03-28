@@ -15,6 +15,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
+    "vanity-imports": "vangen -out ./static",
     "prettier-format": "prettier 'src/**/*.ts{,x}' --write && prettier 'netlify/**/*.ts{,x}' --write"
   },
   "dependencies": {

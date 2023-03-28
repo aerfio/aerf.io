@@ -1,11 +1,11 @@
 import React from "react";
-import Helmet, { HelmetProps } from "react-helmet";
+import { Helmet, HelmetProps } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
 interface Props {
   description?: string;
   lang?: string;
-  meta?: HelmetProps["meta"] | undefined;
+  meta?: HelmetProps["meta"];
   title?: string;
 }
 
