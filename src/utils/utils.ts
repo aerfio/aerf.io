@@ -31,12 +31,12 @@ export const useMousePosition = () => {
   return windowMousePosition;
 };
 
-export const keys = <T>(o: T) => Object.keys(o) as Array<keyof T>;
+export const keys = <T extends {}>(o: T) => Object.keys(o) as Array<keyof T>;
 
 export const isTouchDevice = () =>
   Boolean(
     (typeof window !== "undefined" && "ontouchstart" in window) ||
-      (typeof navigator !== "undefined" && navigator.maxTouchPoints > 0)
+    (typeof navigator !== "undefined" && navigator.maxTouchPoints > 0)
   );
 
 const THEME_CONSTANTS = {

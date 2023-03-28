@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link, HeadFC } from "gatsby";
-import { Nickname, DarkModeToggle, SEO, Layout } from "../components";
+import { SEO, Layout } from "../components";
 
 const NotFoundPage = () => {
   return (
