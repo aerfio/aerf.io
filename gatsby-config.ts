@@ -1,6 +1,10 @@
 import type { GatsbyConfig } from "gatsby";
+import adapter from "gatsby-adapter-netlify";
 
 const config: GatsbyConfig = {
+  adapter: adapter({
+    excludeDatastoreFromEngineFunction: false,
+  }),
   flags: {
     DEV_SSR: false, // switch when errors in console are encountered
   },
@@ -13,11 +17,10 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: false,
-  trailingSlash: "never",
+  trailingSlash: "always",
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
-    "gatsby-plugin-netlify",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-use-dark-mode",
