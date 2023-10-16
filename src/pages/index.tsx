@@ -8,7 +8,7 @@ const IndexPage = () => {
     <Layout
       aboutChildren={
         <>
-          <section className="flex flex-wrap content-center justify-evenly pt-10 pb-10 grid-in-about">
+          <section className="flex flex-wrap content-center justify-evenly pb-10 pt-10 grid-in-about">
             <section className="md:px-20">
               <p className="px-8 text-xl text-primarylight dark:text-primarydark md:text-4xl">
                 <span className="mb-8 block">

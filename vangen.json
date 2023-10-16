@@ -1,9 +1,13 @@
 {
-    "domain": "aerf.io",
-    "repositories": [
-        {
-            "prefix": "podenvs",
-            "url": "https://github.com/aerfio/pod-envs"
-        }
-    ]
+  "domain": "aerf.io",
+  "repositories": [
+    {
+      "prefix": "podenvs",
+      "url": "https://github.com/aerfio/pod-envs"
+    },
+    {
+      "prefix": "k8sutils",
+      "url": "https://github.com/aerfio/k8sutils"
+    }
+  ]
 }

@@ -2,7 +2,7 @@ import { Handler, HandlerEvent, HandlerContext } from "@netlify/functions";
 
 const handler: Handler = async (
   event: HandlerEvent,
-  context: HandlerContext
+  context: HandlerContext,
 ) => {
   console.log(`event body: ${JSON.stringify(event.body)}`);
   console.log(`context: ${JSON.stringify(context)}`);
