@@ -19,6 +19,7 @@ const config: GatsbyConfig = {
   graphqlTypegen: false,
   trailingSlash: "always",
   plugins: [
+    "gatsby-plugin-pnpm",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
