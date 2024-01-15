@@ -12,34 +12,33 @@ const IndexPage = () => {
             <section className="md:px-20">
               <p className="px-8 text-xl text-primarylight dark:text-primarydark md:text-4xl">
                 <span className="mb-8 block">
-                  I'm currently working in{" "}
+                  I'm currently working at{" "}
                   <Link href="https://www.travelping.com/">Travelping</Link>,
-                  using <Link href="https://go.dev">Go</Link> programming
+                  where I use <Link href="https://go.dev">Go</Link> programming
                   language to create{" "}
                   <Link href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">
                     Kubernetes Operators
                   </Link>
                   .{" "}
+                  <span>I'm a</span>{" "}
+                  <Link href="https://www.credly.com/badges/1194769f-143d-404a-8d46-67c30769d33b">
+                    Certified Kubernetes Application Developer
+                  </Link>{" "}
+                  and{" "}
+                  <Link href="https://www.credly.com/badges/2953ddbe-07ed-4828-8e74-8508185d0df2">
+                    Certified Kubernetes Administrator
+                  </Link>
+                  {". "}
                   <span>
-                    Apart from that my area of expertise is designing and
-                    creating REST and GraphQL APIs.
+                    My expertise includes designing and building REST and GraphQL APIs.
                   </span>
                 </span>
                 <span className="mb-8 block">
-                  I used to be Frontend Developer, having joy in using{" "}
+                  I used to be Frontend Developer, working with{" "}
                   <Link href="https://www.typescriptlang.org/">Typescript</Link>{" "}
-                  and <Link href="https://reactjs.org/">React.js</Link>{" "}
-                  together!
+                  and <Link href="https://reactjs.org/">React.js</Link>{","}
                 </span>
-                <span>I'm also</span>{" "}
-                <Link href="https://www.credly.com/badges/1194769f-143d-404a-8d46-67c30769d33b">
-                  Certified Kubernetes Application Developer
-                </Link>{" "}
-                and{" "}
-                <Link href="https://www.credly.com/badges/2953ddbe-07ed-4828-8e74-8508185d0df2">
-                  Certified Kubernetes Administrator
-                </Link>
-                {"."}
+
               </p>
             </section>
           </section>
