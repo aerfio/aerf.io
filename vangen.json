@@ -3,7 +3,7 @@
   "repositories": [
     {
       "prefix": "podenvs",
-      "url": "https://github.com/aerfio/pod-envs"
+      "url": "https://github.com/aerfio/podenvs"
     },
     {
       "prefix": "k8sutils",
