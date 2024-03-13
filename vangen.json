@@ -8,6 +8,10 @@
     {
       "prefix": "k8sutils",
       "url": "https://github.com/aerfio/k8sutils"
+    },
+    {
+      "prefix": "kubectl-config-cleanup",
+      "url": "https://github.com/aerfio/kubectl-config-cleanup"
     }
   ]
 }
