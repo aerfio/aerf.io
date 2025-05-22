@@ -19,8 +19,11 @@ const IndexPage = () => {
                   <Link href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">
                     Kubernetes Operators
                   </Link>
-                  .{" "}
-                  <span>I'm a</span>{" "}
+                  .{" "}<span>I also have experienced with <Link href="https://crossplane.io">Crossplane</Link> - writing Providers, Compositions and general design space. </span>
+                  <span>Apart from that I work on REST/gRPC APIs, microservices using <Link href="https://nats.io/">NATS</Link> and a bunch of other things, the list of buzzwords goes on and on 😝. </span>
+                  <br />
+                  <br />
+                  <span>I used to be a</span>{" "}
                   <Link href="https://www.credly.com/badges/1194769f-143d-404a-8d46-67c30769d33b">
                     Certified Kubernetes Application Developer
                   </Link>{" "}
@@ -29,16 +32,7 @@ const IndexPage = () => {
                     Certified Kubernetes Administrator
                   </Link>
                   {". "}
-                  <span>
-                    My expertise includes designing and building REST and GraphQL APIs.
-                  </span>
                 </span>
-                <span className="mb-8 block">
-                  I used to be Frontend Developer, working with{" "}
-                  <Link href="https://www.typescriptlang.org/">Typescript</Link>{" "}
-                  and <Link href="https://reactjs.org/">React.js</Link>{","}
-                </span>
-
               </p>
             </section>
           </section>

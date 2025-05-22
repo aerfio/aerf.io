@@ -58,5 +58,6 @@
       "axios@>=0.8.1 <1.6.0": ">=1.6.0",
       "postcss@<8.4.31": ">=8.4.31"
     }
-  }
+  },
+  "packageManager": "pnpm@8.15.9+sha256.daa27a0b541bc635323ff96c2ded995467ff9fe6d69ff67021558aa9ad9dcc36"
 }
