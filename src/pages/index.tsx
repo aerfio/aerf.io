@@ -19,8 +19,17 @@ const IndexPage = () => {
                   <Link href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">
                     Kubernetes Operators
                   </Link>
-                  .{" "}<span>I also have experienced with <Link href="https://crossplane.io">Crossplane</Link> - writing Providers, Compositions and general design space. </span>
-                  <span>Apart from that I work on REST/gRPC APIs, microservices using <Link href="https://nats.io/">NATS</Link> and a bunch of other things, the list of buzzwords goes on and on 😝. </span>
+                  .{" "}
+                  <span>
+                    I also have experienced with{" "}
+                    <Link href="https://crossplane.io">Crossplane</Link> -
+                    writing Providers, Compositions and general design space.{" "}
+                  </span>
+                  <span>
+                    Apart from that I work on REST/gRPC APIs, microservices
+                    using <Link href="https://nats.io/">NATS</Link> and a bunch
+                    of other things, the list of buzzwords goes on and on 😝.{" "}
+                  </span>
                   <br />
                   <br />
                   <span>I used to be a</span>{" "}
@@ -49,7 +58,7 @@ const IndexPage = () => {
         </h1>
       </article>
       <StaticImage
-        src="../images/profile.jpeg"
+        src="../images/profile.jpg"
         alt="profile photo"
         placeholder="none"
         layout="constrained"

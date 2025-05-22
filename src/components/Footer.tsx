@@ -14,7 +14,9 @@ export const Footer = () => {
         </Link>
       </div>
       <div className="flex content-center justify-center">
-        <p className="text-xl">© {new Date().getFullYear()} Mateusz Puczyński</p>
+        <p className="text-xl">
+          © {new Date().getFullYear()} Mateusz Puczyński
+        </p>
       </div>
     </section>
   );
